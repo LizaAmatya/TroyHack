@@ -61,5 +61,8 @@ def classifier():
 
 # Make A Prediction
 pipe_lr = classifier()
-predict_data = "I'm just feeling really down today. I can't seem to shake off this feeling."
+predict_data = "I'm finding it hard to find motivation for anything lately. I'm feeling really disappointed about how things turned out."
 print('result', pipe_lr.predict([predict_data]))
+
+input_data = input('Write your feelings: ')
+print('Predicted output', pipe_lr.predict([input_data]))
